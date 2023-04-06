@@ -2,15 +2,18 @@
 name = "checape-v2"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["PauloMarvin <paulo.marving@gmail.com>"]
 readme = "README.md"
 packages = [{include = "checape_v2"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pandas = "^1.5.2"
-jupyter = "^1.0.0"
-spacy = "^3.4.4"
+spacy = {extras = ["cuda11x", "lookups", "transformers"], version = "3.5.1"}
+spacymoji = "3.0.1"
+nltk = "3.8.1"
+pt-core-news-lg = {url = "https://github.com/explosion/spacy-models/releases/download/pt_core_news_lg-3.5.0/pt_core_news_lg-3.5.0-py3-none-any.whl"}
+pandas = "1.5.3"
+jupyter = "1.0.0"
 
 
 [build-system]
