@@ -1,10 +1,7 @@
 import re
-from collections import Counter
 from typing import List, Dict, Any
-
 import spacy
 from spacy.matcher import Matcher
-
 import nltk
 
 
@@ -75,16 +72,6 @@ class TextPreProcessor:
         for text in corpus:
             formatted_corpus.append(cls.__replace_matches(text, patterns_dict))
         return formatted_corpus
-
-    @classmethod
-    def count_all_emojis_emoji_corpus(cls, corpus: List[str]) -> Dict[str, int]:
-        emojis_counter = Counter()
-        for text in corpus:
-            doc = cls.nlp_object(text)
-            emojis = [token.text for token in doc if token._.is_emoji]
-            emojis_counter.update(emojis)
-        emojis_sorted = dict(sorted(emojis_counter.items(), key=lambda item: item[1], reverse=True))
-        return emojis_sorted
 
     @staticmethod
     def __remove_with_regex(raw_text: str, regex_patterns: List[str]) -> str:
