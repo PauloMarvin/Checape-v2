@@ -8,7 +8,7 @@ packages = [{include = "checape_v2"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-spacy = {extras = ["cuda11x", "lookups", "transformers"], version = "3.5.1"}
+spacy = {extras = ["cuda11x", "lookups", "transformers"], version = "3.5.2"}
 spacymoji = "3.0.1"
 nltk = "3.8.1"
 pt-core-news-lg = {url = "https://github.com/explosion/spacy-models/releases/download/pt_core_news_lg-3.5.0/pt_core_news_lg-3.5.0-py3-none-any.whl"}
