@@ -633,13 +633,13 @@ files = [
 
 [[package]]
 name = "emoji"
-version = "0.6.0"
+version = "2.2.0"
 description = "Emoji for Python"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
-    {file = "emoji-0.6.0.tar.gz", hash = "sha256:e42da4f8d648f8ef10691bc246f682a1ec6b18373abfd9be10ec0b398823bd11"},
+    {file = "emoji-2.2.0.tar.gz", hash = "sha256:a2986c21e4aba6b9870df40ef487a17be863cb7778dcf1c01e25917b7cd210bb"},
 ]
 
 [package.extras]
@@ -3039,18 +3039,18 @@ cuda92 = ["cupy-cuda92 (>=5.0.0b4)"]
 
 [[package]]
 name = "spacymoji"
-version = "3.0.1"
-description = "spaCy pipeline component for adding emoji meta data to Doc, Token and Span objects"
+version = "3.1.0"
+description = "spaCy pipeline component for adding emoji metadata to Doc, Token and Span objects"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "spacymoji-3.0.1-py2.py3-none-any.whl", hash = "sha256:21e6a520668615e9377b9d43d9c63ea4faa99f9c31e76308e49ff0c8b3b0405d"},
-    {file = "spacymoji-3.0.1.tar.gz", hash = "sha256:2bbeb94246bd3edf1e4f4a214aa67d84ef3c12d8019eb41dbdd981272c5bc50c"},
+    {file = "spacymoji-3.1.0-py2.py3-none-any.whl", hash = "sha256:443df056e4bf23afb1f6ff8a372d9088e02d5eb2bd4a37a51fa0d19c35d0312b"},
+    {file = "spacymoji-3.1.0.tar.gz", hash = "sha256:55f171fd88bb1131ea7dd19754541c3f9206b19d608ed965b5f95e1e81107e94"},
 ]
 
 [package.dependencies]
-emoji = ">=0.4.5,<1.0.0"
+emoji = ">=2.0,<3.0"
 spacy = ">=3.0.0,<4.0.0"
 
 [[package]]
@@ -3710,4 +3710,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "96715dea5a5c9d56610dca08224de7040e40542e3d56a853afe41c318559d7c8"
+content-hash = "364a774ea055d8e4993f5c69092b3319fe95c49d2b53e5e60e9ecc197b12bdb9"
