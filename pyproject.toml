@@ -12,7 +12,7 @@ spacy = {extras = ["cuda11x", "lookups", "transformers"], version = "3.5.1"}
 spacymoji = "3.0.1"
 nltk = "3.8.1"
 pt-core-news-lg = {url = "https://github.com/explosion/spacy-models/releases/download/pt_core_news_lg-3.5.0/pt_core_news_lg-3.5.0-py3-none-any.whl"}
-pandas = "2.0.0"
+pandas = "2.0.3"
 jupyter = "1.0.0"
 scikit-learn = "1.2.2"
 
